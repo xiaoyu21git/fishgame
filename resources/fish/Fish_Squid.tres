@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="FishData" load_steps=2 format=3 uid="uid://6gk6f75xefpx"]
+
+[ext_resource type="Script" uid="uid://c5mqhrcyml6yk" path="res://resources/fish_data.gd" id="1_ojlf8"]
+
+[resource]
+script = ExtResource("1_ojlf8")
+fish_name = "墨鱼"
+speed = 50.0
+flee_speed = 120.0
+wander_range = 100.0
+vision_range = 80.0
+value = 10
+strength = 150.0
+recovery = 3.0
+duration = 9.0
+effect = "Ink"
+effect_value = 2.0
+effect_interval = 3.0
+metadata/_custom_type_script = "uid://c5mqhrcyml6yk"

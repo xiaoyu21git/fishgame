@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="FishData" load_steps=2 format=3 uid="uid://vhfjrghybrqd"]
+
+[ext_resource type="Script" uid="uid://c5mqhrcyml6yk" path="res://resources/fish_data.gd" id="1_6gd7h"]
+
+[resource]
+script = ExtResource("1_6gd7h")
+fish_name = "电鳗"
+speed = 50.0
+flee_speed = 120.0
+wander_range = 100.0
+vision_range = 80.0
+value = 10
+strength = 180.0
+recovery = 4.0
+duration = 10.0
+effect = "Electric"
+effect_value = 1.5
+effect_interval = 4.0
+metadata/_custom_type_script = "uid://c5mqhrcyml6yk"
