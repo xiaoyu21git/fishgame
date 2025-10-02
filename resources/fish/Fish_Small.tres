@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="FishData" load_steps=2 format=3 uid="uid://dob6oh5c013am"]
+
+[ext_resource type="Script" uid="uid://c5mqhrcyml6yk" path="res://resources/fish_data.gd" id="1_ajbmu"]
+
+[resource]
+resource_name = "Fish_Small.tres"
+script = ExtResource("1_ajbmu")
+fish_name = "小鱼"
+speed = 50.0
+flee_speed = 120.0
+wander_range = 100.0
+vision_range = 80.0
+value = 10
+strength = 50.0
+recovery = 1.0
+duration = 5.0
+effect = "None"
+effect_value = 0.0
+effect_interval = 0.0
+metadata/_custom_type_script = "uid://c5mqhrcyml6yk"

@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://t75t6b3nod5i"]
+
+[ext_resource type="Script" uid="uid://pi55mnbrqh8f" path="res://scripts/player/Player.gd" id="1_niuxy"]
+[ext_resource type="Texture2D" uid="uid://f8u3m0ljvcax" path="res://icon.svg" id="2_mvpqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_niuxy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mvpqy"]
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 6
+script = ExtResource("1_niuxy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_niuxy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mvpqy")
+
+[node name="CatchArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CatchArea"]
+shape = SubResource("RectangleShape2D_mvpqy")
+
+[node name="ToolAnchor" type="Node2D" parent="."]
+
+[node name="ToolSprite" type="Sprite2D" parent="ToolAnchor"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="StaminaBar" type="ProgressBar" parent="."]
+offset_left = -53.0
+offset_top = -74.0
+offset_right = 55.0
+offset_bottom = -63.0
+step = 1.0
+show_percentage = false

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="FishData" load_steps=2 format=3 uid="uid://bcgqc60ykp8xo"]
+
+[ext_resource type="Script" uid="uid://c5mqhrcyml6yk" path="res://resources/fish_data.gd" id="1_wppq7"]
+
+[resource]
+resource_name = "Fish_Stone.tres"
+script = ExtResource("1_wppq7")
+fish_name = "石头鱼"
+speed = 50.0
+flee_speed = 120.0
+wander_range = 100.0
+vision_range = 80.0
+value = 10
+strength = 120.0
+recovery = 2.0
+duration = 8.0
+effect = "Spike"
+effect_value = 10.0
+effect_interval = 2.5
+metadata/_custom_type_script = "uid://c5mqhrcyml6yk"
