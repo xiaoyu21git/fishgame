@@ -17,6 +17,6 @@ enum FishSkill {
 @export var effect_strength: float = 1.0    # 技能强度，可用于不同技能解释
 @export var duration: float = 2.0           # 持续时间，可选
 @export var icon: Texture2D                  # Inspector 展示图标
-
+@export var effect_scene: PackedScene
 # 运行时属性（不导出）
 var last_used_time: float = -999.0

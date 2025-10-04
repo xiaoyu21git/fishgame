@@ -1,18 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://4jasnwssyl8m"]
+[gd_scene load_steps=5 format=3 uid="uid://4jasnwssyl8m"]
 
 [ext_resource type="Script" uid="uid://dnax2tjjc2mb7" path="res://scripts/world/world.gd" id="1_8nwi0"]
-[ext_resource type="PackedScene" uid="uid://t75t6b3nod5i" path="res://scenes/player/player.tscn" id="1_2813q"]
-[ext_resource type="PackedScene" uid="uid://1bccoayu4gar" path="res://scenes/fish/fish_spawner.tscn" id="3_gy1cb"]
 [ext_resource type="Script" uid="uid://c51dtv47j2tcg" path="res://scripts/Core/BotManager.gd" id="4_ucg24"]
 [ext_resource type="PackedScene" uid="uid://bdeyx6rbqhpkk" path="res://scenes/fish/FisherBot.tscn" id="5_g2q7s"]
+[ext_resource type="PackedScene" uid="uid://cvewq3m7fg8ef" path="res://scenes/levels/level_1.tscn" id="5_xsgiu"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_8nwi0")
-
-[node name="Player" parent="." instance=ExtResource("1_2813q")]
-position = Vector2(371, 283)
-
-[node name="FishSpawner" parent="." instance=ExtResource("3_gy1cb")]
 
 [node name="BotManager" type="Node2D" parent="."]
 script = ExtResource("4_ucg24")
@@ -26,3 +20,5 @@ position = Vector2(576, 326)
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Level1" parent="." instance=ExtResource("5_xsgiu")]

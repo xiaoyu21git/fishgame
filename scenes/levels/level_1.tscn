@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvewq3m7fg8ef"]
+
+[ext_resource type="PackedScene" uid="uid://1bccoayu4gar" path="res://scenes/fish/fish_spawner.tscn" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://t75t6b3nod5i" path="res://scenes/player/player.tscn" id="2_6iamk"]
+[ext_resource type="Script" uid="uid://ros6xwgwkwov" path="res://scripts/fish/FishManager/FishManager.gd" id="3_nsrm0"]
+[ext_resource type="Resource" uid="uid://c22npo7qtfk52" path="res://data/levels/config/Level1Config.tres" id="8_s8va5"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="FishSpawner" parent="." instance=ExtResource("1_ksju7")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_6iamk")]
+
+[node name="FishManager" type="Node2D" parent="."]
+script = ExtResource("3_nsrm0")
+level_config = ExtResource("8_s8va5")

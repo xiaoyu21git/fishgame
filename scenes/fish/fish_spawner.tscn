@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://1bccoayu4gar"]
 
-[ext_resource type="Script" uid="uid://c4pdjtvbsxvyf" path="res://scripts/levels/spawners/fish_spawner.gd" id="1_banus"]
-[ext_resource type="PackedScene" uid="uid://dhg6wi26ma3g3" path="res://scenes/fish/fish.tscn" id="2_748l6"]
+[ext_resource type="Script" uid="uid://c4pdjtvbsxvyf" path="res://scripts/fish/spawners/fish_spawner.gd" id="1_i16kd"]
+[ext_resource type="Resource" uid="uid://c22npo7qtfk52" path="res://data/levels/config/Level1Config.tres" id="2_l7j86"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_748l6"]
 
 [node name="FishSpawner" type="Node2D"]
-script = ExtResource("1_banus")
-fish_scene = ExtResource("2_748l6")
+script = ExtResource("1_i16kd")
+level_config = ExtResource("2_l7j86")
 
 [node name="SpawnArea" type="Area2D" parent="."]
 

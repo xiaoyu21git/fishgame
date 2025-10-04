@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="FishData" load_steps=2 format=3 uid="uid://fh5defwsf3v8"]
 
-[ext_resource type="Script" uid="uid://c5mqhrcyml6yk" path="res://resources/fish_data.gd" id="1_gs1vw"]
+[ext_resource type="Script" uid="uid://qikpb0u0slr" path="res://data/fish/fish_data.gd" id="1_gs1vw"]
 
 [resource]
 script = ExtResource("1_gs1vw")
@@ -16,4 +16,3 @@ duration = 12.0
 effect = "Bite"
 effect_value = 20.0
 effect_interval = 5.0
-metadata/_custom_type_script = "uid://c5mqhrcyml6yk"

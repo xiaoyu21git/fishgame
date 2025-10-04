@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="LevelConfig" load_steps=8 format=3 uid="uid://c22npo7qtfk52"]
+
+[ext_resource type="Resource" uid="uid://vhfjrghybrqd" path="res://resources/fish/Fish_Eel.tres" id="1_5oe8v"]
+[ext_resource type="Script" uid="uid://dapp4muxn55sc" path="res://scripts/levels/LevelConfig.gd" id="1_c6rj7"]
+[ext_resource type="Resource" uid="uid://6gk6f75xefpx" path="res://resources/fish/Fish_Squid.tres" id="2_24vxm"]
+[ext_resource type="Resource" uid="uid://dob6oh5c013am" path="res://resources/fish/Fish_Small.tres" id="2_70jp1"]
+[ext_resource type="PackedScene" uid="uid://d3gx6or5qqv0r" path="res://scenes/fish/Fish_Small_blue.tscn" id="3_i72c6"]
+[ext_resource type="PackedScene" uid="uid://hd675r2r715b" path="res://scenes/fish/Fish_Small_red.tscn" id="4_24vxm"]
+[ext_resource type="PackedScene" uid="uid://cgbcfiga70jqp" path="res://scenes/fish/Fish_yellow.tscn" id="5_pqagf"]
+
+[resource]
+script = ExtResource("1_c6rj7")
+fish_data_list = Array[Resource]([ExtResource("1_5oe8v"), ExtResource("2_70jp1"), ExtResource("2_24vxm")])
+spawn_weights = Array[float]([0.5, 0.8, 0.12])
+max_fish_count = 10
+spawn_interval = 2.0
+spawn_area = Rect2(0, 0, 1152, 648)
+fish_scenes = Array[PackedScene]([ExtResource("3_i72c6"), ExtResource("4_24vxm"), ExtResource("5_pqagf")])
+metadata/_custom_type_script = "uid://dapp4muxn55sc"

@@ -63,6 +63,24 @@ tool_previous={
 ]
 }
 
+[layer_names]
+
+2d_render/layer_1="background"
+2d_render/layer_2="environment"
+2d_render/layer_3="water"
+2d_render/layer_4="fish"
+2d_render/layer_5="player"
+2d_render/layer_6="npc"
+2d_render/layer_7="effects"
+2d_render/layer_8="ui"
+2d_physics/layer_1="player"
+2d_physics/layer_2="fish"
+2d_physics/layer_3="environment"
+2d_physics/layer_4="player_catch_area"
+2d_physics/layer_5="fish_vision"
+2d_physics/layer_6="npc"
+2d_physics/layer_7="items"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

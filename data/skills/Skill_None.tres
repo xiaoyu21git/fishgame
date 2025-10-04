@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=3 format=3 uid="uid://8yvm7xv1fahv"]
+
+[ext_resource type="PackedScene" uid="uid://bt6rv54rc7ref" path="res://scenes/Effects/ink_splash.tscn" id="1_i8gwk"]
+[ext_resource type="Script" uid="uid://bgrcygyehrvb8" path="res://data/skills/SkillData.gd" id="2_cva54"]
+
+[resource]
+script = ExtResource("2_cva54")
+skill_type = 0
+cooldown = 5.0
+effect_strength = 1.0
+duration = 2.0
+effect_scene = ExtResource("1_i8gwk")
+metadata/_custom_type_script = "uid://bgrcygyehrvb8"
